@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../views/partials/head %>
+    <% include ../views/partials/ga %>
+  </head>
+
+  <body>
+    <% include ../views/partials/navigation %>
+
+     <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="page-heading" style="color:black">
+                        <h1>FAQ</h1>
+                        <hr class="small">
+                        <span class="subheading">How Blogwith Works</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- Content insert here -->
+                <br>
+                <ul>
+                <li><a href="#who">Who is working on this?</a></li>
+                <li><a href="#usecase">What can you blogwith for?</a></li>
+                <li><a href="#howitworks">How it works?</a></li>
+                <li><a href="#writingmarkdown">How to write markdown in Evernote?</a></li>
+                <li><a href="#tagstouse">What are the Tags we can use now?</a></li>
+                <li><a href="#export">Exporting data?</a></li>
+                <li><a href="#pricing">Pricing?</a></li>
+                <li><a href="#freevspaid">Difference between free and paid?</a></li>
+                <li><a href="#imagesnotshowing">Images not showing for text posts?</a></li>
+                <li><a href="#updates">Updates</a></li>
+                </ul>
+
+                <h3><a name="who">Who is working on this?</a></h3>
+
+                <p>Hi, my name is Bryan. You can find out more about <a href="http://bosslee.co">me here</a>. If you are interested in why I&#8217;m working on this project. I have it right <a href="http://blogwith.co/about">here</a></p>
+
+                <h3><a name="usecase">What can you blogwith for?</a></h3>
+
+                <p>Blogwith is created for the ease of managing your Wordpress site straight from Evernote editor. You can write up a note in Evernote and have it published straight to Wordpress in seconds.</p>
+
+                <p>However, the one thing that it does best is <strong>Live Blogging</strong>. The changes in the connected note content takes place immediately in your Wordpress post. Imagine you are at a live event and you are taking notes of the live presentation, you can have these notes be published to your Wordpress site in real time.</p>
+
+                <h3><a name="howitworks">How it works?</a></h3>
+
+                <p>Blogwith works with Evernote tags. </p>
+
+                <p>When you connect your account with Blogwith, a <strong><em>&#8220;BlogwithPublish&#8221;<strong>* notebook will appear in your Evernote account. This </strong></em>&#8220;BlogwithPublish&#8221;</strong>* notebook is the key to using Blogwith.</p>
+
+                <p>Any note within <strong><em>&#8220;BlogwithPublish&#8221;<strong>* notebook with a tag of </strong></em>&#8220;bw_published&#8221;</strong>* will be published to the connected Wordpress site.</p>
+
+                <p>Any note within <strong><em>&#8220;BlogwithPublish&#8221;<strong>* notebook with a tag of </strong></em>&#8220;bw_markdown&#8221;</strong>* will be published as markdown to the connected Wordpress site.</p>
+
+                <h3><a name="writingmarkdown">How to write markdown in Evernote?</a></h3>
+
+                <p>Any note within <strong><em>&#8220;BlogwithPublish&#8221;<strong>* notebook with a tag of </strong></em>&#8220;bw_markdown&#8221;</strong>* will be published as markdown to the connected Wordpress site. </p>
+
+                <p>So to publish a markdown post, you will need to have two tags in the Evernote note. <strong><em>&#8220;bw_markdown&#8221;<strong>* &amp; </strong></em>&#8220;bw_published&#8221;</strong>*</p>
+
+                <blockquote>
+                <p>Markdown was initially created by John Gruber (of Daring Fireball) as a simple way for non-programming types to write in an easy-to-read format that could be converted directly into HTML. via <a href="http://lifehacker.com/5943320/what-is-markdown-and-why-is-it-better-for-my-to-do-lists-and-notes">Link</a></p>
+                </blockquote>
+
+                <p>You can learn more about Markdown syntax <a href="http://daringfireball.net/projects/markdown/syntax">here</a></p>
+
+                <p>Blogwith will process the Evernote content into Markdown. However you would also need to setup your Wordpress to receive Markdown. This can be done in the following manner:</p>
+
+                <ul>
+                <li>Go to your Wordpress admin page</li>
+                <li>Go to Settings</li>
+                <li>Go to Writing</li>
+                </ul>
+
+                <p>You should see this:
+                <img src="http://note.io/1ABMBx5" alt="Writing settings" /></p>
+
+                <ul>
+                <li>You should check the box, save changes and you are done.</li>
+                </ul>
+
+                <p>You can try out this post, remember to tag it with <strong>bw_markdown</strong> and <strong>bw_published</strong></p>
+
+                <h3><a name="tags">What are the Tags we can use now?</a></h3>
+
+                <p>Here is a list of Tags that Blogwith processes now. It will get biweekly updates</p>
+
+                <ul>
+                <li>bw_published: This is to published the post</li>
+                <li>bw_markdown: This is to tell blogwith to have the note processed into markdown.</li>
+                </ul>
+
+                <h3><a name="export">Exporting data?</a></h3>
+
+                <p>Blogwith is not a blogging service. The source is <a href="https://evernote.com/contact/support/kb/#!/article/28607737">Evernote</a> and the destination is <a href="https://en.support.wordpress.com/export/">Wordpress</a>. Both of these services allow you to export data out easily. I have added the links to exporting out from both of these services.</p>
+
+                <h3><a name="pricing">Pricing?</a></h3>
+
+                <p>There are 2 plans of pricing for Blogwith.</p>
+
+                <ol>
+                <li>Freemium</li>
+                <li>Paid - $29 per annual</li>
+                </ol>
+
+                <h3><a name="freevspaid">Difference between free and paid?</a></h3>
+
+                <p><strong>Free Accounts</strong>
+                Free accounts share many of the feature set that paid accounts will have except that they have &#8220;Posted via <a href="blogwith.co">Blogwith</a>&#8221; at the end of their content. </p>
+
+                <p><strong>Paid Accounts</strong>
+                 - Will have &#8220;Posted via <a href="blogwith.co">Blogwith</a>&#8221; removed
+                 - Ability to manage multiple Wordpress accounts from Evernote
+                 - Create Wordpress pages from Evernote
+                 - Advanced tags usage. For example:
+                 - &#8220;bw_format&#8221;: to set format of the blogpost
+                 - &#8220;bw_draft&#8221;: Changes the post&#8217;s status to draft. This post will not be visible to site visitors.
+                 - and several others.</p>
+
+                <h3><a name="imagesnotshowing">Images not showing for text posts?</a></h3>
+
+                <p>If you are writing in markdown and you are using the image link. Like this:
+                <code>
+                ![TITLE](URL_OF_THE_IMAGE)
+                </code>
+                There is not problem displaying the images. However if you drag and drop images into the note. Blogwith will not process the drag and drop images and your blog post will not show. I&#8217;m current fixing this issue right now and will keep all users posted.</p>
+
+                <h3><a name="updates">Updates</a></h3>
+
+                <p>You can get updates to the service on the following channels:</p>
+
+                <ul>
+                <li><a href="https://twitter.com/blogwithapp">@blogwithapp</a></li>
+                <li><a href="http://bosslee.co/tag/building-blogwith/">Building Blogwith</a></li>
+                <li><a href="http://us7.campaign-archive1.com/home/?u=17e71a92489841c21497b01dd&amp;id=cd84b21acc">My email updates to existing users</a></li>
+                </ul>
+            </div>
+        </div>
+        <% include ../views/partials/footer %>
+    </div>
+    
+    
+
+  </body>
+
+
+</html>

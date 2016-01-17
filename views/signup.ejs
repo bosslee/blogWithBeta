@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../views/partials/head %>
+    <% include ../views/partials/ga %>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <title><%= title %></title>
+	<style>
+		body        { padding-top:80px; }
+	</style>
+  </head>
+
+  <body>
+    
+    <!-- Page Content -->
+    <div class="container">
+    	<div class="col-sm-6 col-sm-offset-3">
+
+    		<h1><span class="fa fa-sign-in"></span> Signup</h1>
+        <!-- show any messages that come back with authentication -->
+        <% if (message.length > 0) { %>
+          <div class="alert alert-warning"><%= message %></div>
+        <% } %>
+    		
+    		<!-- LOGIN FORM -->
+			<form action="/connect/local" method="post">
+			    <div class="form-group">
+			        <label>Email</label>
+			        <input type="text" class="form-control" name="email">
+			    </div>
+			    <div class="form-group">
+			        <label>Password</label>
+			        <input type="password" class="form-control" name="password">
+			    </div>
+
+			    <button type="submit" class="btn btn-warning btn-lg">Signup</button>
+			</form>
+		</div>
+    </div>
+  </body>
+  <% include ../views/partials/footer %>
+</html>

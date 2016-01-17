@@ -1,0 +1,47 @@
+<!-- <p>Welcome!</p>
+<p>ID: <%= user._id %></p>
+<p>Shard: <%= user.evernote.id %></p>
+<p>Token: <%= user.evernote.token %></p> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../views/partials/head %>
+    <% include ../views/partials/ga %>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <title><%= title %></title>
+	<style>
+		body        { padding-top:80px; }
+	</style>
+  </head>
+
+  <body>
+    
+    <!-- Page Content -->
+    <div class="container">
+    	<div class="col-sm-6 col-sm-offset-3">
+    		<h1><span class="fa fa-sign-in"></span> Connected Account</h1>
+        <!-- show any messages that come back with authentication -->
+        <% if (message.length > 0) { %>
+          <div class="alert alert-warning"><%= message %></div>
+        <% } %>
+        <p>Your connected email is <%= user.local.email %></p>
+
+		    <% if (!user.wordpress.token) { %>
+          <h2>Connect your Wordpress account.</h2>
+          <p>If you are using a self-hosted wordpress, you would need to have the <a href="https://wordpress.org/plugins/jetpack/">Jetpack Plugin</a> installed and <a href="http://jetpack.me/support/json-api/">Json-api</a> setting enabled.</p>
+          <a href="/connect/wordpress"><img src="//s0.wp.com/i/wpcc-button.png" width="231" /></a>
+          <% } %>   
+        <% if (user.wordpress.token) { %>
+          <h2>You have connected your wordpress account.</h2>
+          <p>You would have a BlogwithPublish notebook in your Evernote account now. Any notes in the notebook will be synced to the respective Wordpress account you have connected :D</p>
+          <p>For this version, markdown support has been added. If you have question, you can reach me <a href="https://twitter.com/@blogwithapp">@blogwithapp</a></p> or visit <a href="http://blogwith.co/faq">How blogwith works?</a></p>
+          <p>You can now close this window.</p>
+        <% } %>  
+		  </div>
+    </div>
+    <% include ../views/partials/footer %>
+  </body>
+</html>
+    
+    
